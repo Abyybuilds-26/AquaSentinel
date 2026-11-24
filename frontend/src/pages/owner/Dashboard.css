@@ -1,0 +1,32 @@
+.sensor-strip {
+  display: flex;
+  gap: 0;
+  justify-content: space-around;
+  padding: 8px 0;
+}
+
+.sensor-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sensor-strip-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sensor-strip-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sensor-strip-val {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 2px;
+}

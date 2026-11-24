@@ -1,0 +1,110 @@
+.alerts-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.alerts-tab {
+  padding: 8px 20px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alerts-tab:hover {
+  border-color: var(--border-bright);
+  color: var(--text-primary);
+}
+
+.alerts-tab.active {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border-color: var(--border-bright);
+}
+
+.alerts-tab-badge {
+  background: var(--critical);
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 99px;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.alert-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--acolor, var(--accent));
+  border-radius: var(--radius-lg);
+  transition: all 0.2s;
+  animation: fadeInUp 0.3s ease;
+}
+
+.alert-card:hover {
+  background: color-mix(in srgb, var(--abg, var(--accent-dim)) 50%, var(--bg-card));
+  border-color: color-mix(in srgb, var(--acolor, var(--accent)) 40%, var(--border));
+  transform: translateX(2px);
+}
+
+.alert-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 52px;
+}
+
+.alert-card-icon { font-size: 28px; }
+
+.alert-card-body { flex: 1; min-width: 0; }
+
+.alert-card-type {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--acolor, var(--accent));
+  margin-bottom: 6px;
+}
+
+.alert-card-msg {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.alert-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.alert-card-waste {
+  font-size: 13px;
+  color: var(--warning);
+}
+
+.alert-card-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 8px;
+  min-width: 100px;
+}
